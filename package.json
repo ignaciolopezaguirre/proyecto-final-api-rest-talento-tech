@@ -1,0 +1,20 @@
+{
+  "name": "primer-api-rest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "ignacio Lopez Aguirre",
+  "license": "ISC",
+  "type": "module",
+  "description": "prroyecto final API REST",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "firebase": "^12.6.0"
+  }
+}
