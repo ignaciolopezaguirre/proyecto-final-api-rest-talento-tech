@@ -5,13 +5,13 @@ import {
   createProduct,
   deleteProduct,
 } from "../controllers/productsController.js";
+import { autenticar } from "../middleware/autenticacionToken.js";
 
 const router = Router();
 
 router.get("/products", getAllProducts);
 router.get("/products/:id", getProductById);
-router.post("/products/create", createProduct);
+router.post("/products/create", autenticar, createProduct);
 router.delete("/products/:id", deleteProduct);
-//router.post("/auth/login");
 
 export default router;

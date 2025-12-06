@@ -19,7 +19,6 @@ export const createProduct = async (request, response) => {
   if (request.body.name == undefined) {
     response.status(422).json({ error: "es necesario el nombre" });
   }
-  z;
 
   const { name, price, categories } = request.body;
   const newProduct = await model.addNewProduct({ name, price, categories });
